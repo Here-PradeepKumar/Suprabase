@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supabase Auth Example</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Supabase Authentication</h1>
+        <form id="authForm">
+            <input type="email" id="email" placeholder="Enter your email" required>
+            <button type="submit">Send OTP</button>
+        </form>
+        <form id="verifyForm">
+            <input type="email" id="verifyEmail" placeholder="Enter your email" required>
+            <input type="text" id="otp" placeholder="Enter OTP" required>
+            <button type="submit">Verify OTP</button>
+        </form>
+        <button id="logoutButton">Logout</button>
+        <p id="message"></p>
+    </div>
+    <script src="app.js"></script>
+    <script src="verify.js"></script>
+</body>
+</html>
